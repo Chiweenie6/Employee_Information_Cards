@@ -2,6 +2,9 @@
   "dependencies": {
     "inquirer": "^8.2.4"
   },
+  "devDependencies": {
+    "jest": "^29.4.0"
+  },
   "name": "employee_information_cards",
   "description": "To create a quick and easy summary of employee basic information.",
   "version": "1.0.0",
@@ -10,9 +13,10 @@
     "lib": "lib",
     "test": "tests"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "node index.js",
+    "reset": "rm ./dist/index.html"
   },
   "repository": {
     "type": "git",
