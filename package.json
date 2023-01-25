@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "name": "employee_information_cards",
+  "description": "To create a quick and easy summary of employee basic information.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chiweenie6/Employee_Information_Cards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chiweenie6/Employee_Information_Cards/issues"
+  },
+  "homepage": "https://github.com/Chiweenie6/Employee_Information_Cards#readme"
+}
