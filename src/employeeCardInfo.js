@@ -11,11 +11,9 @@ const makeCard = (empCard) => {
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">${manager.getId()}</li>
                 <li class="list-group-item">${manager.getOfficeNumber()}</li>
-                <li class="list-group-item"></li>
             </ul>
             <div class="card-body">
                 <a href="#" class="card-link">${manager.getEmail()}</a>
-                <a href="#" class="card-link">Another link</a>
             </div>
         </div>`;
     };
@@ -29,8 +27,6 @@ const makeCard = (empCard) => {
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">${engineer.getId()}</li>
-                <li class="list-group-item"></li>
-                <li class="list-group-item"></li>
             </ul>
             <div class="card-body">
                 <a href="#" class="card-link">${engineer.getEmail()}</a>
@@ -49,11 +45,9 @@ const makeCard = (empCard) => {
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">${intern.getId()}</li>
                 <li class="list-group-item">${intern.getSchool()}</li>
-                <li class="list-group-item"></li>
             </ul>
             <div class="card-body">
                 <a href="#" class="card-link">${intern.getEmail()}</a>
-                <a href="#" class="card-link"></a>
             </div>
         </div>`;
     };

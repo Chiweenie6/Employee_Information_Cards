@@ -1,9 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
-const engineer = require("./lib/Engineer");
-const intern = require("./lib/Intern");
-const manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const Manager = require("./lib/Manager");
 const empCardInfo = require("./src/employeeCardInfo");
 
 const DIST_DIR = path.resolve(__dirname, "dist");
@@ -58,7 +58,7 @@ const beginQuestions = () => {
         type: "input",
         name: "managerEmail",
         message: "What is the manager's email?"
-      }
+      },
       {
         type: "input",
         name: "managerOfficeNumber",
@@ -94,13 +94,23 @@ const beginQuestions = () => {
         type: "input",
         name: "engineerEmail",
         message: "What is the engineer's email?"
-      }
+      },
       {
         type: "input",
         name: "engineerGithub",
         message: "What is the engineer's GitHub username?"
       }
-    ]);
+    ])
+    .then((answer) => {
+      const engineer = new Engineer(
+        answer.engineerName,
+        answer.engineerId,
+        answer.engineerEmail,
+        answer.engineerGithub
+      );
+      employeeCards.push(engineer);
+      employeeInfo();
+    });
   };
 
   const makeIntern = () => {
@@ -120,14 +130,24 @@ const beginQuestions = () => {
         type: "input",
         name: "internEmail",
         message: "What is the intern's email?"
-      }
+      },
       {
         type: "input",
         name: "internSchool",
         message: "What school does the intern attend?"
       }
-    ]);
-  };
+    ])
+    .then((answer) => {
+      const intern = new Intern(
+        answer.internName,
+        answer.internId,
+        answer.internEmail,
+        answer.internSchool
+      );
+      employeeCards.push(intern);
+      employeeInfo();
+    });
+  }
 
   const organizeEmployees = () => {
     if (!fs.existsSync(DIST_DIR)) {
