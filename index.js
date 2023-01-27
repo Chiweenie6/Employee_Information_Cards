@@ -9,80 +9,58 @@ const empCardInfo = require("./src/employeeCardInfo");
 const DIST_DIR = path.resolve(__dirname, "dist");
 const distPath = path.join(DIST_DIR, "index.html");
 
-
-console.log("Let's begin");
-
+console.log("Enter employee information below.");
 
 const employeeCards = [];
 
-
-
 const beginQuestions = () => {
-    const employeeInfo = () => {
-        inquirer
-            .prompt([
-            {
-                type: "list",
-                name: "role",
-                message: "What is this employee's role?",
-                choices: [
-                    "Manager",
-                    "Engineer",
-                    "Intern",
-                    "No more employees"
-                ]
-            }
-        ])
-        .then((input) => {
-            switch (input.role) {
-                case "Manager":
-                    makeManager();
-                    break;
-                case "Engineer":
-                    makeEngineer();
-                    break;
-                case "Intern":
-                    makeIntern();
-                    break;
-                default:
-                    organizeEmployees();    
-            }
-        });
+  const employeeInfo = () => {
+    inquirer
+      .prompt([
+        {
+          type: "list",
+          name: "role",
+          message: "What is this employee's role?",
+          choices: ["Manager", "Engineer", "Intern", "No more employees"],
+        },
+      ])
+      .then((input) => {
+        switch (input.role) {
+          case "Manager":
+            makeManager();
+            break;
+          case "Engineer":
+            makeEngineer();
+            break;
+          case "Intern":
+            makeIntern();
+            break;
+          default:
+            organizeEmployees();
+        }
+      });
+  };
+
+  const makeManager = () => {
+
+  };
+
+  const makeEngineer = () => {
+
+  };
+
+  const makeIntern = () => {
+
+  };
+
+  const organizeEmployees = () => {
+    if (!fs.existsSync(DIST_DIR)) {
+      fs.mkdirSync(DIST_DIR);
     }
+    fs.writeFileSync(distPath, empCardInfo(employeeCards), "utf-8");
+  };
 
-    const makeManager = () => {
-
-    }
-
-
-    const makeEngineer = () => {
-
-    }
-
-
-    const makeIntern = () => {
-
-    }
-
-
-    const organizeEmployees = () => {
-        
-    }
-
-
-
-
-
-
-    employeeInfo();
+  employeeInfo();
 };
-
-
-const organizeEmployees = () => {
-    if(!fs.existsSync(DIST_DIR)) {
-        fs.mkdirSync(DIST_DIR);
-    }
-    fs.writeFileSync(distPath, )
-}
 
 beginQuestions();
