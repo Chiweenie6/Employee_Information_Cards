@@ -21,7 +21,7 @@ const beginQuestions = () => {
           type: "list",
           name: "role",
           message: "What is this employee's role?",
-          choices: ["Manager", "Engineer", "Intern", "No more employees"],
+          choices: ["Manager", "Engineer", "Intern", "Organize employees"],
         },
       ])
       .then((input) => {
@@ -47,22 +47,43 @@ const beginQuestions = () => {
       {
         type: "input",
         name: "managerName",
-        message: "What is the manager's name?"
+        message: "What is the manager's name?",
+        validate: (input) => {
+          if (input === "") {
+            return "You must enter a name.";
+          }
+          return true;
+        }
       },
       {
         type: "input",
         name: "managerId",
-        message: "What is the manager's id?"
+        message: "What is the manager's id?",
+        validate: (input) => {
+          if (input === "") {
+            return "You must enter an id.";
+          }
+          return true;
+        }
       },
       {
         type: "input",
         name: "managerEmail",
-        message: "What is the manager's email?"
+        message: "What is the manager's email?",
+        validate: (email) => {
+          return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
+        }
       },
       {
         type: "input",
         name: "managerOfficeNumber",
-        message: "What is the manager's office number?"
+        message: "What is the manager's office number?",
+        validate: (input) => {
+          if (isNaN(input)) {
+            return "You must enter a valid office number.";
+          }
+          return true;
+        }
       }
     ])
     .then((answer) => {
@@ -83,22 +104,43 @@ const beginQuestions = () => {
       {
         type: "input",
         name: "engineerName",
-        message: "What is the engineer's name?"
+        message: "What is the engineer's name?",
+        validate: (input) => {
+          if (input === "") {
+            return "You must enter a name.";
+          }
+          return true;
+        }
       },
       {
         type: "input",
         name: "engineerId",
-        message: "What is the engineer's id?"
+        message: "What is the engineer's id?",
+        validate: (input) => {
+          if (input === "") {
+            return "You must enter an id.";
+          }
+          return true;
+        }
       },
       {
         type: "input",
         name: "engineerEmail",
-        message: "What is the engineer's email?"
+        message: "What is the engineer's email?",
+        validate: (email) => {
+          return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
+        }
       },
       {
         type: "input",
         name: "engineerGithub",
-        message: "What is the engineer's GitHub username?"
+        message: "What is the engineer's GitHub username?",
+        validate: (input) => {
+          if (input === "") {
+            return "You must enter a GitHub username.";
+          }
+          return true;
+        }
       }
     ])
     .then((answer) => {
@@ -119,22 +161,43 @@ const beginQuestions = () => {
       {
         type: "input",
         name: "internName",
-        message: "What is the intern's name?"
+        message: "What is the intern's name?",
+        validate: (input) => {
+          if (input === "") {
+            return "You must enter a name.";
+          }
+          return true;
+        }
       },
       {
         type: "input",
         name: "internId",
-        message: "What is the intern's id?"
+        message: "What is the intern's id?",
+        validate: (input) => {
+          if (input === "") {
+            return "You must enter an id.";
+          }
+          return true;
+        }
       },
       {
         type: "input",
         name: "internEmail",
-        message: "What is the intern's email?"
+        message: "What is the intern's email?",
+        validate: (email) => {
+          return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
+        }
       },
       {
         type: "input",
         name: "internSchool",
-        message: "What school does the intern attend?"
+        message: "What school does the intern attend?",
+        validate: (input) => {
+          if (input === "") {
+            return "You must enter a school name.";
+          }
+          return true;
+        }
       }
     ])
     .then((answer) => {

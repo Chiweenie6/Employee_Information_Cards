@@ -1,5 +1,5 @@
 h1 {
-    color: Purple;
+    color: blueviolet;
     background-color: lightgrey;
     font-size: 60px;
     text-align: center;
@@ -7,15 +7,17 @@ h1 {
 }
 
 h5 {
-    font-size: 200%;
+    font-size: 300%;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .card {
-    box-shadow: 10px 10px 10px black;
+    box-shadow: -10px -10px 10px black;
     background-color: lightgrey;
 }
 
 li, p {
     font-size: 150%;
+    text-transform: capitalize;
 }

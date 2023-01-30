@@ -96,7 +96,7 @@ module.exports = (empCard) => {
     <title>Employee Cards</title>
 </head>
 
-<body class="container text-center overflow-hidden px-4">
+<body class="container text-center px-4">
     <h1><i class="fa-solid fa-users text-success"></i> Employee Information Cards <i class="fa-solid fa-users text-success"></i></h1>
 
     <div class="row">
