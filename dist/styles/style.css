@@ -1,14 +1,21 @@
 h1 {
     color: Purple;
-    background-color: grey;
+    background-color: lightgrey;
     font-size: 60px;
     text-align: center;
     padding: 25px;
 }
 
 h5 {
-    color: darkgreen;
-    background-color: aquamarine;
-    font-size: 25px;
+    font-size: 200%;
     text-align: center;
+}
+
+.card {
+    box-shadow: 10px 10px 10px black;
+    background-color: lightgrey;
+}
+
+li, p {
+    font-size: 150%;
 }

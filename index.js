@@ -154,7 +154,7 @@ const beginQuestions = () => {
       fs.mkdirSync(DIST_DIR);
     }
     fs.writeFileSync(distPath, empCardInfo(employeeCards), "utf-8");
-    console.log("Yeah! 😁");
+    console.log("Team! Assemble! 😁");
   };
 
   employeeInfo();
