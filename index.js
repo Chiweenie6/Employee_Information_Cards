@@ -79,10 +79,11 @@ const beginQuestions = () => {
         name: "managerOfficeNumber",
         message: "What is the manager's office number?",
         validate: (input) => {
-          if (isNaN(input)) {
-            return "You must enter a valid office number.";
+          const number = input.match(/^([01]{1})?[-.\s]?\(?(\d{3})\)?[-.\s]?(\d{3})[-.\s]?(\d{4})\s?((?:#|ext\.?\s?|x\.?\s?){1}(?:\d+)?)?$/i);
+          if (number) {
+            return true;
           }
-          return true;
+          return "You must enter a valid office number."
         }
       }
     ])
