@@ -32,7 +32,7 @@ const makeCard = (empCard) => {
                 <a href="https://github.com/${engineer.getGithub()}" class="card-link text-info"><i class="fa-brands fa-github fa-2x"></i> https://github.com/${engineer.getGithub()}</a>
                 <br>
                 <br>
-                <a href="href="mailto:${engineer.getEmail()}" class="card-link text-info"><i class="fa-regular fa-envelope fa-2x"></i> ${engineer.getEmail()}</a>
+                <a href="mailto:${engineer.getEmail()}" class="card-link text-info"><i class="fa-regular fa-envelope fa-2x"></i> ${engineer.getEmail()}</a>
             </div>
         </div>`;
   };
@@ -49,7 +49,7 @@ const makeCard = (empCard) => {
                 <li class="list-group-item"><i class="fa-solid fa-graduation-cap fa-2x"></i> ${intern.getSchool()}</li>
             </ul>
             <div class="card-body">
-                <a href="href="mailto:${intern.getEmail()}" class="card-link text-info"><i class="fa-regular fa-envelope fa-2x"></i> ${intern.getEmail()}</a>
+                <a href="mailto:${intern.getEmail()}" class="card-link text-info"><i class="fa-regular fa-envelope fa-2x"></i> ${intern.getEmail()}</a>
             </div>
         </div>`;
   };
