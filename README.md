@@ -23,7 +23,7 @@ To create a quick and easy summary of employee basic information.
   
   Image:   
   ![image](https://user-images.githubusercontent.com/113393706/215630435-e9c8c195-56a6-492b-8dbc-b233d83e9399.png)
-  ![image](https://user-images.githubusercontent.com/113393706/215631152-5a46e3dd-b248-468d-a3d4-fdf20f642f29.png)
+  ![image](https://user-images.githubusercontent.com/113393706/215631309-9577af0e-3849-4aae-9e6e-c02dbad72e38.png)
 
 
 
