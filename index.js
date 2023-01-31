@@ -133,7 +133,11 @@ const beginQuestions = () => {
         name: "engineerEmail",
         message: "What is the engineer's email?",
         validate: (email) => {
-          return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
+          const mailCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+          if (email.match(mailCheck)) {
+            return true;
+          }
+          return "You must enter a valid email.";
         }
       },
       {
@@ -190,7 +194,11 @@ const beginQuestions = () => {
         name: "internEmail",
         message: "What is the intern's email?",
         validate: (email) => {
-          return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(email);
+          const mailCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+          if (email.match(mailCheck)) {
+            return true;
+          }
+          return "You must enter a valid email.";
         }
       },
       {
