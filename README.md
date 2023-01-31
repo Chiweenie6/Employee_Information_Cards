@@ -22,7 +22,11 @@ To create a quick and easy summary of employee basic information.
   To quickly view employee information in a single place and have the ability to easily communicate with team members through their e-mail and github.   
   
   Image:   
-  ![image]()
+  ![image](https://user-images.githubusercontent.com/113393706/215632123-14e8225f-a909-4476-ab33-6383e86335f2.png)
+  ![image](https://user-images.githubusercontent.com/113393706/215632247-e20c763f-a3bd-4944-9966-baa583d8acf9.png)
+
+
+
 
 
 ## Installation
@@ -32,7 +36,7 @@ To create a quick and easy summary of employee basic information.
   n/a
 
 ## Tests
-  n/a
+  Once the application is installed, type "npm test" into the command-line to run the tests.
 
 ## Questions
   https://github.com/Chiweenie6  
