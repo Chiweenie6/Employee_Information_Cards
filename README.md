@@ -22,8 +22,8 @@ To create a quick and easy summary of employee basic information.
   To quickly view employee information in a single place and have the ability to easily communicate with team members through their e-mail and github.   
   
   Image:   
-  ![image](https://user-images.githubusercontent.com/113393706/215630435-e9c8c195-56a6-492b-8dbc-b233d83e9399.png)
-  ![image](https://user-images.githubusercontent.com/113393706/215631309-9577af0e-3849-4aae-9e6e-c02dbad72e38.png)
+  ![image](https://user-images.githubusercontent.com/113393706/215631453-f723da92-4b9f-4273-833b-8d17451f6466.png)
+  ![image](https://user-images.githubusercontent.com/113393706/215630649-79659dd5-704a-4a69-b86f-e18a61032a6c.png)
 
 
 
