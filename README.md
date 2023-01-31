@@ -16,6 +16,8 @@ To create a quick and easy summary of employee basic information.
   To create a webpage that displays basic information on employees. The webpage is created using a Node.js command-line application and npm Inquirer. The application will ask questions inside the terminal, then the answers will be placed into a template and converted to a HTML webpage for viewing. Each employee information card will have links to their e-mail and github for easy communication.
   
   Video demo link:
+  https://drive.google.com/file/d/1aEyZcPrS0urLhHNa6WqTs8Y0FKOcjqY0/view?usp=sharing
+  
   
 
 ## Usage
